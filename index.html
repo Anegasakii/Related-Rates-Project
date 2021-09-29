@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Anegasaki - Related Rates</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="flex">
+		<div class="text">
+			<p>This interactive model is based on related rates ladder problems and uses the Pythagorean Theorem to maintain the length of the ladder as one of its anchors moves.</p>
+			<p>I gave the ladder a length of 8, so, with anchor points \(x\) and \(y\), the ladder is defined by \(x^2+y^2=64\).</p>
+			<p>If we derive the whole thing with respect to time, we get:<br>
+				\(\frac d{dt}[x^2 + y^2=64]\)<br>
+				\(\frac d{dt}[x^2] + \frac d{dt}[y^2]=0\)<br>
+				\(2x\frac{dx}{dt} + 2y\frac{dy}{dt}=0\)
+			</p>
+		</div>
+		<iframe src="https://preview.p5js.org/Anegasaki/embed/pfjZW7JSt"></iframe>
+	</div>
+	<footer>
+		<a href="https://github.com/Anegasakii/Related-Rates-Project">Repo</a>
+		<a href="https://anegasakii.github.io/">Website</a>
+		<a href="https://editor.p5js.org/Anegasaki/sketches/pfjZW7JSt" target="_blank">Canvas</a>
+	</footer>
+</body>
+</html>
+
