@@ -13,15 +13,21 @@
 	<div class="flex">
 		<div class="text">
 			<p>This interactive model is based on related rates ladder problems and uses the Pythagorean Theorem to maintain the length of the ladder as one of its anchors moves.</p>
-			<p>I gave the ladder a length of 8, so, with anchor points \(x\) and \(y\), the ladder is defined by \(x^2+y^2=64\).</p>
-			<p>If we derive the whole thing with respect to time, we get:<br>
-				\(\frac d{dt}[x^2 + y^2=64]\)<br>
-				\(\frac d{dt}[x^2] + \frac d{dt}[y^2]=0\)<br>
-				\(2x\frac{dx}{dt} + 2y\frac{dy}{dt}=0\)
-			</p>
+			<p>I gave the ladder a length of 8ft, so, with anchor points \(x\) and \(y\), the ladder is defined by \(x^2+y^2=64\). There's also a button to make it start sliding down at \(2\frac{ft}s\)&nbsp;.</p>
 		</div>
 		<iframe src="https://preview.p5js.org/Anegasaki/embed/pfjZW7JSt"></iframe>
 	</div>
+	<p>If we derive the whole thing with respect to time, we get:<br>
+		\(\frac d{dt}[x^2 + y^2=64]\)<br>
+		\(\frac d{dt}[x^2] + \frac d{dt}[y^2]=0\)<br>
+		\(2x\frac{dx}{dt} + 2y\frac{dy}{dt}=0\)
+	</p>
+	<p>Let's see what how fast the bottom of the ladder is sliding when the ladder is 4ft from the top of this 10ft tall structure:<br>
+		\(x=\sqrt{(8)^2-(10-4)^2}=\sqrt{64-36}=\sqrt{28}=2\sqrt{7}\)<br>
+		\(2(2\sqrt7)\frac{dx}{dt}+2(6)(-2)=0\)<br>
+		\(4\sqrt7\frac{dx}{dt}-24=0\)<br>
+		\(\frac{dx}{dt}=\dfrac{24}{4\sqrt7}\)
+	</p>
 	<footer>
 		<a href="https://github.com/Anegasakii/Related-Rates-Project">Repo</a>
 		<a href="https://anegasakii.github.io/">Website</a>
