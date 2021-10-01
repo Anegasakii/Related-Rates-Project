@@ -13,11 +13,11 @@
 	<div class="flex">
 		<div class="text">
 			<p>This interactive model is based on related rates ladder problems and uses the Pythagorean Theorem to maintain the length of the ladder as one of its anchors moves.</p>
-			<p>I gave the ladder a length of 8ft, so, with anchor points \(x\) and \(y\), the ladder is defined by \(x^2+y^2=64\). There's also a button to make it start sliding down at \(2\frac{ft}s\)&nbsp;.</p>
+			<p>I gave the ladder a length of 8ft, so, if the top of the ladder is \(y\) ft from the ground and the bottom is \(x\) ft away from the wall, the ladder is defined by \(x^2+y^2=64\)&#8288;. There's also a button to make it start sliding down at \(2\frac{ft}s\)&#8288;.</p>
 		</div>
 		<iframe src="https://preview.p5js.org/Anegasaki/embed/pfjZW7JSt"></iframe>
 	</div>
-	<p>If we derive the whole thing with respect to time, we get:<br>
+	<p>If we know the position and speed of one point, we can see how fast the other point is sliding by deriving with respect to time, which looks like:<br>
 		\(\frac d{dt}[x^2 + y^2=64]\)<br>
 		\(\frac d{dt}[x^2] + \frac d{dt}[y^2]=0\)<br>
 		\(2x\frac{dx}{dt} + 2y\frac{dy}{dt}=0\)
@@ -27,6 +27,9 @@
 		\(2(2\sqrt7)\frac{dx}{dt}+2(6)(-2)=0\)<br>
 		\(4\sqrt7\frac{dx}{dt}-24=0\)<br>
 		\(\frac{dx}{dt}=\dfrac{24}{4\sqrt7}\)
+	</p>
+	<p>
+		\(\frac{dx}{dt}\) is positive, so the distance between the bottom of the ladder is <em>increasing</em> at a rate of \(\dfrac{24}{4\sqrt7}\frac{ft}s\)&#8288;.
 	</p>
 	<footer>
 		<a href="https://github.com/Anegasakii/Related-Rates-Project">Repo</a>

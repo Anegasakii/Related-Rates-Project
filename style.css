@@ -6,6 +6,7 @@ p {
 iframe {
     width: 600px;
     height: 400px;
+    touch-action: none;
 }
 
 .flex {
@@ -21,5 +22,11 @@ iframe {
     .flex{
         flex-direction:column;
         align-items: center;
+    }
+    body {
+        min-width: min-content;
+    }
+    html {
+        padding: 2vh 2vw;
     }
 }
