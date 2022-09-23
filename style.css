@@ -1,7 +1,7 @@
 @import url(https://anegasakii.github.io/base.css);
-
+body { margin: 2%; }
 p {
-    font-size: 200%; color: var(--darkest);
+    font-size: 200%; color: var(--lighter);
 }
 iframe {
     width: 600px;
@@ -16,6 +16,9 @@ iframe {
 .text {
     width: 40%;
 }
+
+.MJX-TEX { color: white; }
+
 @media (max-width: 1250px){
     iframe { order: 0; }
     .text { order: 1; width: 100%}
